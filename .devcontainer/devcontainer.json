@@ -34,10 +34,15 @@
 				"mutantdino.resourcemonitor",
 				"matklad.rust-analyzer",
 				"tamasfe.even-better-toml",
-				"serayuzgur.crates"
+				"serayuzgur.crates",
+				"swellaby.vscode-rust-test-adapter"
 			]
 		}
 	},
+	"mounts": [
+		// docker volume create cargo
+		"source=cargo,target=/usr/local/cargo/registry,consistency=cached"
+	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
